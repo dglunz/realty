@@ -5,9 +5,14 @@ gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'turbolinks'
 gem 'puma'
+
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'font-awesome-rails'
+gem 'owlcarousel-rails', github: 'acrogenesis/owlcarousel-rails', branch: 'OwlCarousel2'
 
 group :development, :test do
   gem 'byebug'

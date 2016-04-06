@@ -1,0 +1,40 @@
+@font-face
+  font-family: 'DomaineSans'
+  src: url('/assets/DomaineSansText-Light.woff2')
+  //src: local('☺'), url('TiemposHeadline-Black.woff') format('woff'), url('/fonts/TiemposHeadline-Black.ttf') format('truetype'), url('/fonts/TiemposHeadline-Black.svg') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Domaine'
+  src: url('/assets/DomaineText-Medium.woff2')
+  //src: local('☺'), url('TiemposHeadline-Black.woff') format('woff'), url('/fonts/TiemposHeadline-Black.ttf') format('truetype'), url('/fonts/TiemposHeadline-Black.svg') format('svg')
+  font-weight: normal
+  font-style: normal
+
+body
+  font-family: "DomaineSans", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 400
+  h1, h2, h3, h4, h5, h6, p.lead, header .brand-name
+    font-family: "Domaine", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-weight: 700
+  .about-carousel .owl-controls
+    .owl-prev, .owl-next
+      line-height: 55px
+  .portfolio-carousel .item .project-details .project-name
+    font-family: "DomaineSans", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-weight: 700
+  .testimonials .testimonials-carousel
+    .item .testimonial-info .testimonial-author .name
+      font-family: "DomaineSans", "Helvetica Neue", Helvetica, Arial, sans-serif
+      font-weight: 700
+    .owl-controls
+      .owl-prev, .owl-next
+        line-height: 55px
+
+p
+  font-size: 18px
+  line-height: 1.5
+  &.lead
+    font-weight: 900
+    font-size: 24px

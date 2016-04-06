@@ -1,1 +1,75 @@
-<h1>Gary Glunz</h1>
+<body id="page-top">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <img src="assets/img/creative/logo.png" class="img-fluid" alt="">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a class="page-scroll" href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#services">Services</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#process">Process</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#work">Work</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header style="background-image: url(<%= image_url('fh-bg') %>)">
+    <div class="intro-content">
+      <!--<img src="assets/img/creative/profile.png" class="img-fluid center-block" alt="">-->
+      <div class="brand-name">Glunz</div>
+      <hr class="colored">
+      <div class="brand-name-subtext">REAL ESTATE</div>
+    </div>
+    <div class="scroll-down">
+      <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+    </div>
+  </header>
+
+  <%= render partial: 'testimonials' %>
+
+  <section id="about">
+    <div class="container wow fadeIn">
+      <div class="row">
+        <div class="col-md-6">
+          <%= image_tag 'glunzrealtors', class: 'img-fluid' %>
+        </div>
+        <div class="col-md-6 text-md-center">
+          <h1>Gary & Maureen Glunz</h1>
+          <hr class="colored">
+          <p>The beauty of the area brought Gary and Maureen to Fountain Hills from the Midwest in 1987. 
+          With over 25 years experience in the luxury home and homesite market, Gary continues to be MCO 
+          Realty’s top producer year after year. 
+          <br><br>Gary and Maureen’s goal is to provide their clients with 
+          knowledge of the Fountain Hills real estate market while treating them with integrity and respect.</p>
+          <a href="tel:+14802164170">480.216.4170</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
