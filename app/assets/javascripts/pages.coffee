@@ -1,6 +1,4 @@
 $ ->
-  console.log 'butts'
-
   $('a.page-scroll').bind 'click', (e) ->
     $anchor = $(this)
     $('html, body').stop().animate({
@@ -24,4 +22,21 @@ $ ->
   $('body').scrollspy
     target: '.navbar-fixed-top'
     offset: 51
+
+  $header = $('.navbar-fixed-top')
+  didScroll = false
+  changeHeaderOn = 400
+
+  $(window).on 'scroll', (event) ->
+    if !didScroll
+      didScroll = true
+      setTimeout scrollPage(), 250
+
+  scrollPage = ->
+    sy = $('body').scrollTop()
+    if sy >= changeHeaderOn
+      $('nav.navbar').removeClass('navbar-expanded')
+    else
+      $('nav.navbar').addClass('navbar-expanded')
+    didScroll = false
 

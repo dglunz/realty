@@ -13,6 +13,10 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-rails'
 gem 'owlcarousel-rails', github: 'acrogenesis/owlcarousel-rails', branch: 'OwlCarousel2'
+ 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
 
 group :development, :test do
   gem 'byebug'
