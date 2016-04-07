@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'turbolinks'
 gem 'rails_12factor', group: :production
+gem 'rails_serve_static_assets', group: :production
 gem 'puma'
 
 gem 'jquery-rails'
