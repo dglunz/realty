@@ -8,16 +8,12 @@ $ ->
 
   $('.navbar-collapse ul li a').click (e) -> $('.navbar-toggle:visible').click()
 
-  $(".testimonials-carousel").owlCarousel
-    items: 1
-    navigation: true
-    pagination: true
-    autoHeight: true
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>"
-      "<i class='fa fa-angle-right'></i>"
-    ]
-    transitionStyle: "fadeUp"
+  $(".testimonials-carousel").slick
+    dots: true
+    infinite: true
+    speed: 300
+    slidesToShow: 1
+    adaptiveHeight: true
 
   $('body').scrollspy
     target: '.navbar-fixed-top'

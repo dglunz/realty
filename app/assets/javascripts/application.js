@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require tether
 //= require bootstrap-sprockets
-//= require owl.carousel
+//= require slick.js.js
 //= require turbolinks
 //= require_tree .

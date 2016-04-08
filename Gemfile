@@ -13,10 +13,10 @@ gem 'puma'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-rails'
-gem 'owlcarousel-rails', github: 'acrogenesis/owlcarousel-rails', branch: 'OwlCarousel2'
  
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
+  gem 'rails-assets-slick.js'
 end
 
 group :development, :test do
@@ -26,6 +26,7 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'quiet_assets'
 end
 
 group :production do 
